@@ -17,8 +17,8 @@ export default function DeleteBtn({ id }) {
         } catch (error) {
           console.log(error);
         }
+            redirect('/')
         }
-        redirect('/')
     }
     return (
         <button className="text-red-400" onClick={() => deleteTopic(id)}>
